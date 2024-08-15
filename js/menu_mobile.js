@@ -13,3 +13,12 @@ menu.addEventListener('click', ()=>{
 overlay.addEventListener('click', ()=>{
     menu.classList.remove('abrir_menu')
 })
+// Rolagem fluida dos botoes de navegacao 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+       });
+    });
+});
