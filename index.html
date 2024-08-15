@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <!-- Fim fonte -->
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Fim Bootstrap-->
+    <title>Portfólio Karina Yumi</title>
+    <script src="js/menu_mobile.js" defer></script>
+</head>
+<body id="topo">
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#topo">
+                    <img class="img_logo" src="img/logo.png">
+                </a>
+            </div> <!-- classe logo -->
+    
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#topo">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Projetos</a></li>
+                </ul>
+            </nav> <!-- classe menu-desktop-->
+            
+            <div class="btn_contato">
+                <a href="#contato">
+                    <button> Entre em contato </button>
+                </a>
+            </div> <!-- classe btn contato-->
+            <div class="btn_abrir_menu" id="btn_menu">
+                <i class="bi bi-list"></i>
+            </div> <!-- classe btn_abrir_menu-->
+            <div class="menu_mobile" id="menu_mobile">
+                    <div class="btn_fechar">
+                        <i class="bi bi-x-circle-fill"></i>
+                    </div> <!-- classe btn_fechar-->
+                <nav>
+                    <ul>
+                        <li><a href="#topo">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#portfolio">Projetos</a></li>
+                        <li><a href="#contato"> Contato</a></li>
+                    </ul>
+                </nav> <!-- classe menu-desktop-->
+            </div> <!-- classe menu mobile-->
+            <div class="overlay_menu" id="overlay_menu">
+
+            </div> <!-- classe overlay_menu-->
+        </div> <!-- classe interface-->
+    </header>
+     <main>
+        <section class="topo_site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt_topo">
+                        <h1>UMA JOVEM APAIXONADA POR TECNOLOGIA<span>.</span></h1>
+                        <p>Me chamo Karina Yumi Ferreira Pinto, tenho 18 anos e atualmente estou cursando o 2° semestre da minha graduação em Ciências da Computação.
+                            Finalizei o Ensino Médio Técnico em Desenvolvimento de Sistemas na Etec, onde pude adquirir conhecimentos em linguagens 
+                            de programação e marcação, como Java, PHP, Mysql, Javascript, SQL Server, React Native, Arduino e HTML/CSS.</p>
+                        
+                        <div class="btn_contato">
+                            <a href="img/Curriculo_KarinaYumi.pdf">
+                                <button>Baixar CV</button>
+                            </a>
+                        </div> <!-- classe btn_contato-->
+                    </div> <!-- classe txt_topo-->
+                        <div class="img_topo" >
+                            <img src="img/eu.png">
+                        </div><!-- classe img_topo-->
+                    </div> <!-- classe flex-->
+                </div> <!-- classe interface-->
+        </section> <!-- classe topo_site-->
+
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img_sobre">
+                        <img class="imagem_sobre" src="img/eu_sobre.png">
+                    </div> <!-- classe img_sobre-->
+
+                    <div class="txt_sobre">
+                        <h2>MUTO PRAZER, <span>SAIBA MAIS SOBRE MIM</span></h2>
+                        <p>Atualmente estou atuando como Jovem Aprendiz QA no SPC Brasil e foi aonde pude colocar em prática os conhecimentos que obtive na ETEC.
+                            Adquiri conhecimentos na prática de como funciona o mercado de trabalho, os processos na área de tecnologia e na empresa como um todo.</p>
+                        <p>Dos conhecimentos adquiridos, tenho como os principais a criação e o desenvolvimento de cenários de testes, criação de automações Web Service, utilização de software como, Jenkins, Salesforce, Rundeck, Mantis e TestLink. Sempre foi muito dedicada e  empenhada em todas as tarefas que se propunha a realizar, sempre gostei muito de estudar e principalmente, aprimorar meus conhecimentos.</p>
+
+                        <div class="btn_social">
+                            <a href="https://www.instagram.com/yumininaa/"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://wa.me/5511911403617"><button><i class="bi bi-whatsapp"></i></i></button></a>
+                            <a href="https://www.linkedin.com/in/karina-yumi/"><button><i class="bi bi-linkedin"></i></button></a>
+                        </div> <!--classe btn_social-->
+                    </div> <!-- classe txt_sobre-->
+                </div> <!--classe flex-->
+            </div> <!--calsse interface-->
+        </section><!--classe sobre-->
+
+        <section class="portfolio" id="portfolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTFÓLIO</span></h2>
+                <div class="flex">
+
+                    <a href="http://etec-199-karinayumi.atwebpages.com/Evol/index.html">
+                    <div class="img_port" style="background-image: url(img/prj02.png);">
+                        <div class="overlay"> Evol </div>
+                    </div></a>
+
+                    <a href="http://etec-199-karinayumi.atwebpages.com/TrampAqui/index.html">
+                    <div class="img_port" style="background-image: url(img/prj03.png);">
+                        <div class="overlay"> TrampAqui </div>
+                    </div></a>
+
+                    <a href="http://etec-199-karinayumi.atwebpages.com/siteCookie/">
+                        <div class="img_port" style="background-image: url(img/prj01.png);">
+                            <div class="overlay"> Projeto Cookie</div>
+                        </div></a>
+                </div><!--classe flex-->
+                
+            </div><!--classe interface-->
+        </section><!-- classe portfolio-->
+
+        <section class="formulario" id="contato">
+            <div class="interface">
+                <h2 class="titulo">FALE <span>COMIGO</span></h2>
+
+                <form action="./php/envia.php" method="post">
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome:" required>
+                    <input type="number" name="telefone" id="telefone" placeholder="Seu número/celular:">
+                    <input type="email" name="email" id="email" placeholder="Seu e-mail:" required>
+                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem:" required></textarea>
+                    <div class="btn_enviar">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div> <!--classe interface-->
+        </section> <!-- calsse formulario-->
+     </main>
+     <footer>
+        <div class="interface">
+            <div class="line_footer">
+                <div class="flex">
+                    <div class="logo_footer">
+                        <img class="img_logo" src="img/logo.png">
+                    </div><!--classe logo_footer-->
+                    <div class="btn_social">
+                        <a href="https://www.instagram.com/yumininaa/"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://wa.me/5511911403617"><button><i class="bi bi-whatsapp"></i></i></button></a>
+                        <a href="https://www.linkedin.com/in/karina-yumi/"><button><i class="bi bi-linkedin"></i></button></a>
+                    </div> <!--classe btn_social-->
+                </div><!--classe flex-->
+            </div><!--classe line_footer-->
+
+            <div class="line_footer borda">
+                <p><i class="bi bi-envelope-at"></i><a href="mailto:karinayumifp@gmail.com">karinayumifp@gmail.com</a></p>
+            </div><!--classe line_footer-->
+        </div><!--classe interface-->
+     </footer>
+     
+     <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

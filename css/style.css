@@ -1,0 +1,531 @@
+/* Estilo Geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+
+}
+
+body{
+    background-color: #25262b;
+    margin-top: 150px;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.img_logo{
+    width: 60px;
+    height: 90px;
+}
+.flex{
+    display: flex;
+}
+
+.btn_contato button{
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #ff5055;
+    color: #ffff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 1.2s;
+}
+button:hover, form .btn_enviar input[type=submit]:hover{
+    box-shadow: 0px 0px 8px #ff505683;
+    transform: scale(1.05);
+}
+
+
+/* Estilo Cabeçalho */
+
+header {
+    width: 100%;
+    background-color: #25262b; /* Mantém a cor de fundo para o cabeçalho */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Mantém o cabeçalho acima dos outros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra opcional para o cabeçalho */
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 4%;
+}
+
+header .logo img {
+    width: 60px;
+    height: 90px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header a {
+    color: #969696;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+}
+
+header nav.menu-desktop:hover {
+    color: #ffff;
+    transform: scale(1.07);
+    transition: .2s;
+}
+
+header .btn_contato button {
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #ff5055;
+    color: #ffff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 1.2s;
+}
+
+/* Estilo Menu mobile */
+.btn_abrir_menu i{
+    color: #ff5055;
+    font-size: 35px;
+}
+
+.menu_mobile{
+    background-color: #25262b;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .6s;
+}
+
+.menu_mobile.abrir_menu{
+    width: 70%;
+
+}
+
+.menu_mobile.abrir_menu ~ .overlay_menu{
+    display: block;
+}
+
+.menu_mobile nav ul{
+    text-align: right;
+}
+
+.menu_mobile nav ul li a{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 300;
+    padding: 15px 8%;
+    display: block;
+}
+
+.menu_mobile nav ul li a:hover{
+    background-color: #ff5055;
+
+}
+
+.menu_mobile .btn_fechar{
+    padding: 25px 20px 6% ;
+}
+
+.menu_mobile .btn_fechar i{
+    color: #ff5055;
+    font-size: 30px;
+
+}
+
+.overlay_menu{
+    background-color: #000000af;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+/* Estilo Topo */
+
+section.topo_site{
+    padding: 10px 4%;
+}
+
+section.topo_site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo_site h1{
+    color: #ff5055;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo_site .txt_topo h1 span{
+    color: #ffff;
+    font-size: 60px;
+}
+
+.topo_site .txt_topo p{
+    color: #ffffff;
+    margin: 40px 0;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.topo_site .img_topo img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* Estilo sobre */
+
+section.sobre{
+    padding: 70px 4%;
+
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt_sobre{
+    color: #ffff;
+
+}
+
+.sobre .txt_sobre h2{
+    font-size: 40px;
+    color: #ffff;
+    line-height: 40px;
+    margin-bottom: 10px;
+
+}
+
+.sobre .txt_sobre h2 span{
+    color: #ff5055;
+    display: block;
+
+}
+
+.sobre .txt_sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn_social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #ff5055;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 1.2s;
+}
+
+.imagem_sobre{
+    width: 400px;
+}
+/* Estilo Portfolio */
+
+h2.titulo{
+    color: #ffff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #ff5055;
+}
+
+section.portfolio{
+    padding: 80px 4%;
+
+}
+
+section.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img_port{
+    width: 360px;
+    height: 460px;
+    background-color: #ff5055;
+    box-shadow: 0 0 20px 20px #ffffff28;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    border-radius: 23px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.img_port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000a8;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 400px;
+    color: #ffff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* Estilo Formulário */
+
+section.formulario{
+    padding: 50px 4%;
+
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+
+}
+
+form input, textarea{
+    width: 100%;
+    background-color: #ffff;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 20px;
+    color: #000000;
+    font-weight: 5000;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 5050px;
+}
+
+
+form input::placeholder{
+    color: #ff5055;
+}
+
+
+form textarea::placeholder{
+    color: #ff5055;
+    
+}
+
+form .btn_enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn_enviar input[type=submit]{
+    width: 120px;
+    height: 60px;
+    background-color: #ff5055;
+    text-align: center;
+    color: #ffff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .4s;
+}
+
+/* Estilo rodapé */
+
+footer{
+    padding: 60px 4%;
+    box-shadow:  0 0 50px 20px #0300005b;
+}
+
+footer .flex{
+    justify-content: space-between ;
+}
+
+footer .line_footer{
+    padding: 10px 0;
+}
+
+.borda{
+    border-top: 2px solid #ff5055;
+}
+
+
+footer .line_footer p{
+    color: #ffff;
+
+}
+
+footer .line_footer p i{
+    color: #ff5055;
+    font-size: 22px;
+    width: 60px;
+    margin-right: 5px;
+}
+
+footer .line_footer a{
+    color: #ffff;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width:1020px) {
+
+    /* Classes gerais */
+    .flex{
+        flex-direction: column;
+    }
+
+    .topo_site .flex{
+        flex-direction: column-reverse;
+    }
+
+    /* Cabeçalho */
+    .menu-desktop, .btn_contato{
+        display: none;
+
+    }
+
+    /* Topo do site */
+    section.topo_site{
+        padding: 0px 8%;
+    }
+
+    section.topo_site .flex{
+        gap: 60px;
+    }
+
+    .topo_site .img_topo img{
+        width: 100%;
+    }
+
+    .topo_site h1{
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .topo_site .txt_topo p{
+        margin: 40px 0;
+        font-size: 18px;
+        text-align: justify;
+    }
+    
+
+    /* Sobre */
+    section.sobre .flex{
+        align-items: center;
+        gap: 20px;
+    }
+
+    
+    section.sobre{
+        padding: 20px 8%;
+    }
+
+    .sobre .txt_sobre h2{
+        font-size: 31px;
+        color: #ffff;
+        line-height: 40px;
+    }
+
+    .imagem_sobre{
+        width: 350px;
+    }
+
+    .btn_social{
+        text-align: center;
+    }
+
+    /* Portfolio */
+    section.portfolio{
+        padding: 25px 8%;
+    
+    }
+
+    section.portfolio .flex{
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    
+    .img_port{
+        width: 100%;
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex{
+        gap: 40px;
+    }
+
+    /* Footer */
+
+    footer .flex{
+        gap: 20px;
+    }
+
+    footer{
+        padding: 0px 4%;
+        box-shadow:  0 0 50px 20px #0300005b;
+    }
+
+    footer .line_footer{
+        padding: 30px 0;
+        text-align: center;
+    }
+
+}
