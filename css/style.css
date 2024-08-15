@@ -529,3 +529,8 @@ footer .line_footer a{
     }
 
 }
+@media screen and (min-width: 1021px) {
+    .btn_abrir_menu {
+        display: none;
+    }
+}
